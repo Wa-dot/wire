@@ -5,12 +5,13 @@ class Nail
 {
 private:
     int pin;
-    int answerTab[];
-    
+    int answerTab[9];
+    int finalResult = 0;
+    int numTab;
 
 public:
-    int pinDef(int defPin);
-    int intpuPin();
+    int pinDef(int defPin, int numDif);
+    int inputPin();
     int outputPin();
     int readPin(int winCode);
 
